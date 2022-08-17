@@ -3,7 +3,6 @@
   
   
 ## `package.json` 스크립트 설명 
----
 `build`: 프로젝트를 빌드하면 이 패키지를 다른 패키지에서 가져올 수 있는 `index.d.ts`가 포함된 빌드 폴더가 생성됩니다.  
 `build:watch`: 코드가 변경될 때마다 프로젝트가 재빌드 됩니다.  
 `rollup`: 빌드 후 프로젝트 타입을 번들합니다. 올바른 선언 및 내보내기를 포함하는 `index.d.ts`를 생성하려면 이 작업이 필요합니다.  
@@ -13,7 +12,6 @@
 
 
 ## `devDependencies` 설명 
----
 `rollup`, `rollup-plugin-dts`, `@rollup/plugin-typescript`: `index.d.ts` 파일을 유즈케이스에 더 유용하도록 수정하는 데 사용되는 모듈 번들러입니다.  
 `jest`, `ts-jest`: 테스트 작성 및 단위 테스트용  
 `nodemon`: 코드가 변경될 때마다 명령을 실행할 수 있습니다. `build:watch` 스크립트를 참조하세요.  
@@ -21,12 +19,10 @@
 
 
 ## `tsconfig.build.json`  
----
 빌드에 테스트가 포함되지 않도록 작성
 
 
 ## 빌드 CLI 
----
 ``` bash
 npm install && npm run build
 ```
