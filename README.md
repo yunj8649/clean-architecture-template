@@ -2,7 +2,7 @@
 참고하여 따라해본 프로젝트 입니다. 
 
 
-** `package.json` 스크립트 설명 **
+## `package.json` 스크립트 설명 
 ---
 `build`: 프로젝트를 빌드하면 이 패키지를 다른 패키지에서 가져올 수 있는 `index.d.ts`가 포함된 빌드 폴더가 생성됩니다.  
 `build:watch`: 코드가 변경될 때마다 프로젝트가 재빌드 됩니다.  
@@ -11,7 +11,7 @@
 `test:watch`: 모든 관련 변경 사항에 대해 테스트를 다시 시작합니다. (자세한 내용은 [jest](https://jestjs.io/docs/cli#--watch) 문서 참조)  
 
 
-** `devDependencies` 설명 **
+## `devDependencies` 설명 
 ---
 `rollup`, `rollup-plugin-dts`, `@rollup/plugin-typescript`: `index.d.ts` 파일을 유즈케이스에 더 유용하도록 수정하는 데 사용되는 모듈 번들러입니다.  
 `jest`, `ts-jest`: 테스트 작성 및 단위 테스트용  
@@ -19,12 +19,12 @@
 나머지는 타입스크립트 종속성입니다.  
 
 
-** `tsconfig.build.json` ** 
+## `tsconfig.build.json`  
 ---
 빌드에 테스트가 포함되지 않도록 작성
 
 
-** 빌드 CLI **
+## 빌드 CLI 
 ---
 ``` bash
 npm install && npm run build
