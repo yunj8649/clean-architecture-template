@@ -1,12 +1,16 @@
 {
   "name": "root",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "npm install && lerna bootstrap",
+    "start": "lerna run start",
+    "test": "lerna run test",
+    "build": "lerna run build",
+    "graph": "nx graph"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "lerna": "^5.1.8",
+    "nx": "^14.4.3",
+    "tslib": "^2.4.0"
+  }
 }

@@ -10,6 +10,14 @@
 `test`: 패키지의 모든 단위 테스트를 실행합니다.  
 `test:watch`: 모든 관련 변경 사항에 대해 테스트를 다시 시작합니다. (자세한 내용은 [jest](https://jestjs.io/docs/cli#--watch) 문서 참조)  
 
+---  
+
+## root의 `package.json` 스크립트 설명 
+`prestart`: 이 스크립트는 `npm start`를 실행하면 자동으로 실행됩니다. 모든 패키지에 대한 모든 종속성이 있고 올바르게 구성되었는지 확인합니다.
+`start`: `packages` 디렉토리의 모든 패키지에 대해 시작 스크립트를 실행합니다.
+`test`, `build`: `start와` 동일합니다.
+`graph`: 프로젝트 종속성을 시각화할 수 있도록 종속성 그래프를 만듭니다.
+
 
 ---  
 
@@ -24,6 +32,13 @@
 
 ## `tsconfig.build.json`  
 빌드에 테스트가 포함되지 않도록 작성
+
+---  
+
+
+## `nx.json`  
+`cacheableOperations` : 변경된 패키지만 rebuild, retest 진행
+`targetDefaults`: 패키지 A가 패키지 B에 종속된 경우 패키지 A의 시작은 패키지 B의 빌드 후에만 실행
 
 ---  
 

@@ -11,6 +11,9 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "core": "*"
+  },  
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.3.3",
     "@types/jest": "^28.1.6",
