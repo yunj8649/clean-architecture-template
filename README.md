@@ -32,7 +32,14 @@
 ``` bash
 npm install && npm run build
 ```
-정상적인 빌드 확인은 아래 파일ㄹ에서 확인할 수 있다.
+```bash
+## presentation build
+npm start
+npm test
+npm run build
+npm run eject
+```
+정상적인 빌드 확인은 아래 파일에서 확인할 수 있다.
 `build/src/index.ts`, `build/src/index.d.ts`
 
 
